@@ -22,8 +22,7 @@ const Profile = (props: ProfileElements) => {
 
         <p>
           <span className="text-blue-500">
-            {" "}
-            When I grow up I want to be like: {mentor}⭐{" "}
+            When I grow up I want to be like: {mentor}⭐
           </span>
         </p>
       </div>
