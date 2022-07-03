@@ -14,6 +14,7 @@ module.exports = {
        mblue: "#0E0E52",
        snow: "#FFFCFF",
        ablue: "#DBE4EE",
+       dark: "#0C0B0B",
      }
 
     },
