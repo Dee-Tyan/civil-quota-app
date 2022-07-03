@@ -1,21 +1,20 @@
 import React, { ReactNode } from 'react';
-import Header from './components/Header/Header';
-import Profile from './components/ProfileCard/Profile';
+import { Route, Routes } from "react-router-dom";
 import Homepage from "./components/Pages/Home/Homepage"
-import profiledata from "./dummyprofiledata.js"
+import Layout from './components/Layout/Layout';
 import './App.css';
-import { profile } from 'console';
 
-function App() {
 
-  let renderProfile: ReactNode = profiledata.map(talent => {
-    return <Profile tname={talent.tname} age={talent.age} location={talent.location} mentor={talent.mentor}  />
-  })
+const App = () => {
+
   return (
-    <div className="flex justify-center flex-wrap gap-5">
+    <>
      
-     {renderProfile}    
-    </div>
+      <Layout>
+      <Homepage />
+     </Layout>
+
+    </>
   );
 }
 

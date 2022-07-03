@@ -71,17 +71,17 @@ export default [
         location: "Anambra",
         mentor: "Henry Okwenu",
        },
-       {
-        tname: "Jacob Nwosu",
-        age: 14,
-        location: "Abuja",
-        mentor: "Marques Brownie",
-       },
-       {
-        tname: "George Achi",
-        age: 13,
-        location: "Lagos",
-        mentor: "Guy Kawasaki",
-       },
+    //    {
+    //     tname: "Jacob Nwosu",
+    //     age: 14,
+    //     location: "Abuja",
+    //     mentor: "Marques Brownie",
+    //    },
+    //    {
+    //     tname: "George Achi",
+    //     age: 13,
+    //     location: "Lagos",
+    //     mentor: "Guy Kawasaki",
+    //    },
 
 ]
