@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from "../../assets/ngt_logo.png"
+import logo from "../../assets/web.png"
 import profile from "../../assets/profilebg.png"
 
 function Header() {
