@@ -1,17 +1,18 @@
-import React from "react";
+import React from 'react'
 
-const Login = () => {
+const SignUp = () => {
   return (
     <div>
-      <section
+
+<section
         className="flex justify-center py-4 xl:py-5"
       >
         <div className="container">
           <div className="grid row-auto mb-2 ">
             <div className="text-center mx-auto md:col-span-8 xl:col-span-6 px-4">
-              <h2 className="text-4xl mb-2">Log In</h2>
+              <h2 className="text-4xl mb-2">Sign Up</h2>
               <p className="flex flex-wrap">
-                Log in to your account to access the full features.
+                Sign up to join our pool of investors
               </p>
             </div>
           </div>
@@ -32,7 +33,16 @@ const Login = () => {
                     </svg>
                   </div>
                   <form className="flex flex-col mx-10 my-6 " method="post">
-                    <label className="grid text-sm text-dark">
+                  <label className="grid text-sm text-dark mb-4 my-4">
+                      Name
+                      <input
+                        className="border-gunmental border-2 opacity-60 rounded pl-2 mt-1"
+                        type="text"
+                        name="text"
+                        placeholder="Maria"
+                      />
+                    </label>
+                    <label className="grid text-sm text-dark mb-4 my-4">
                       Email
                       <input
                         className="border-gunmental border-2 opacity-60 rounded pl-2 mt-1"
@@ -55,10 +65,10 @@ const Login = () => {
                         className="bg-sapphire opacity-70 text-white w-full px-2 py-2 rounded-md"
                         type="submit"
                       >
-                        Login
+                        Sign Up
                       </button>
                     </label>
-                    <p className="text-center text-sm"> Forgot your password?</p>
+                    <p className="text-center text-sm"> Already have an account? <span>Log in</span></p>
                   </form>
                 </div>
               </div>
@@ -66,8 +76,9 @@ const Login = () => {
           </div>
         </div>
       </section>
-    </div>
-  );
-};
 
-export default Login;
+    </div>
+  )
+}
+
+export default SignUp
