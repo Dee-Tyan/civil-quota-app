@@ -6,9 +6,9 @@ const Footer = () => {
     <>
       <footer className="text-white bg-black opacity-90">
         <div className="container mx-auto py-12 px-4">
-          <div className="grid grid-cols-4 pb-8">
-            <div className="">
-              <h3 className="text-white">Programs</h3>
+          <div className="flex flex-col items-center justify-center text-center sm:grid sm:grid-cols-4 sm:text-left pb-8">
+            <div className="pb-2">
+              <h3 className="text-white font-bold">Programs</h3>
               <ul className="list-unstyled">
                 <li>
                   <a className="underline" href="#">
@@ -17,7 +17,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <a className="underline" href="#">
-                    Development
+                    Community
                   </a>
                 </li>
                 <li>
@@ -27,8 +27,8 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-            <div className="">
-              <h3 className="text-white">About</h3>
+            <div className="pb-2">
+              <h3 className="text-white font-bold">About</h3>
               <ul className="list-unstyled">
                 <li>
                   <a className="underline" href="#">
@@ -47,8 +47,8 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-            <div className="">
-              <h3 className="text-white">Careers</h3>
+            <div className="pb-2">
+              <h3 className="text-white font-bold">Careers</h3>
               <ul className="list-unstyled">
                 <li>
                   <a className="underline" href="#">
@@ -68,7 +68,7 @@ const Footer = () => {
               </ul>
             </div>
 
-            <div className="flex flex-col items-center justify-center">
+            <div className="flex flex-col items-center justify-center mt-4">
               <div className="flex items-center mb-2">
                 <span className="">
                   <img src={logo} className="w-8" />
@@ -80,7 +80,7 @@ const Footer = () => {
             </div>
           </div>
           <hr />
-          <div className="flex justify-between items-center pt-8">
+          <div className="flex justify-between items-center pt-8 px-4">
             <p className="mb-0 text-sm">Copyright © 2022 NGT</p>
             <ul className="flex flex-row gap-2 ">
               <li className="">

@@ -17,9 +17,9 @@ const Homepage = () => {
   return (
     <div className="">
       <main>
-        <section className="w-full p-2 flex flex-col border-b-2 shadow-lg">
+        <section className="w-full p-4 flex flex-col border-b-2 shadow-lg">
           <img className="h-60 rounded" src={heroImg} />
-          <h1 className="mb-1 text-4xl">Next Generation Techies</h1>
+          <h1 className="mb-1 text-4xl font-black">Next Generation Techies</h1>
           <p className="mt-0 text-sm ">
             Join our Tech Talent community to sponsor the next generation of
             innovators.
