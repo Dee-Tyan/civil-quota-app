@@ -80,7 +80,7 @@ const Footer = () => {
             </div>
           </div>
           <hr />
-          <div className="flex justify-between items-center pt-8 px-4">
+          <div className="flex justify-between items-center pt-8">
             <p className="mb-0 text-sm">Copyright © 2022 NGT</p>
             <ul className="flex flex-row gap-2 ">
               <li className="">

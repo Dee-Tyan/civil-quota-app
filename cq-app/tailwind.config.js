@@ -15,6 +15,8 @@ module.exports = {
        snow: "#FFFCFF",
        ablue: "#DBE4EE",
        dark: "#0C0B0B",
+       dgunmental: "#292521",
+       sapphire: "#0a58ca"
      }
 
     },
