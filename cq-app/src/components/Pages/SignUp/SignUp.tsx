@@ -33,7 +33,7 @@ const SignUp = () => {
                     </svg>
                   </div>
                   <form className="flex flex-col mx-10 my-6 " method="post">
-                  <label className="grid text-sm text-dark mb-4 my-4">
+                  <label className="grid text-sm text-dark opacity-50 mb-4">
                       Name
                       <input
                         className="border-gunmental border-2 opacity-60 rounded pl-2 mt-1"
@@ -42,7 +42,7 @@ const SignUp = () => {
                         placeholder="Maria"
                       />
                     </label>
-                    <label className="grid text-sm text-dark mb-4 my-4">
+                    <label className="grid text-sm text-dark opacity-50 mb-4 ">
                       Email
                       <input
                         className="border-gunmental border-2 opacity-60 rounded pl-2 mt-1"
@@ -51,7 +51,7 @@ const SignUp = () => {
                         placeholder="myemail@gmail.com"
                       />
                     </label>
-                    <label className="grid text-sm text-dark mb-4 my-4">
+                    <label className="grid text-sm text-dark opacity-50 mb-4">
                       Password
                       <input
                         className="border-gunmental border-2 opacity-60 rounded pl-2 mt-1"
