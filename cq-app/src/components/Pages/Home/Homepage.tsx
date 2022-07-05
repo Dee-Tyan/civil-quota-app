@@ -6,7 +6,7 @@ const Homepage = () => {
   return (
     <div className="">
       <main>
-        <section className="w-full p-4 flex flex-col justify-center shadow-lg bg-gradient-to-r from-white to-blue-500 h-80 rounded">
+        <section className="w-full p-4 flex flex-col justify-center shadow-lg bg-gradient-to-r from-gray-100 via-cyan-500 to-blue-500 h-80 rounded">
           <h1 className="mb-1 text-4xl sm:text-6xl font-black">Next Generation Techies</h1>
           <p className="mt-0 text-sm ">
             Join our Tech Talent community to sponsor the next generation of
@@ -16,7 +16,7 @@ const Homepage = () => {
 
         <section className="grid sm:grid-cols-2 grid-cols-1 w-8/12 h-58 gap-8 mx-auto flex-auto">
           <div className="flex flex-col justify-center items-center my-8 mx-2">
-            <h3 className="text-2xl mb-4">Not All Heroes Wear Cape</h3>
+            <h3 className="text-xl sm:text-2xl mb-4">Not All Heroes Wear Cape</h3>
             <p>
               {" "}
               You have everything in your might to save the world, why don't you
@@ -41,7 +41,7 @@ const Homepage = () => {
         </section>
 
         <section className="flex justify-center items-center py-4 xl:py-5 max-full ">
-          <div className="container py-4 xl:py-5 border-black border-2 ">
+          <div className="container py-4 xl:py-5 border-black sm:border-2 ">
             <div className="flex flex-row mb-5 ">
               <div className="grid md:cols-span-8 xl:cols-span-6 text-center mx-auto">
                 <h2 className="mb-1 text-3xl">Talent Testimonies</h2>

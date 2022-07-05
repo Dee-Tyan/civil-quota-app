@@ -8,7 +8,7 @@ function Header() {
         <img src={logo} />
         
         <div className=' flex justify-end'>
-        <button type='button' className='flex items-center rounded-lg text-snow px-2 text-sm mx-4 bg-gradient-to-r from-cyan-500 to-blue-500'>
+        <button type='button' className='flex items-center rounded-lg text-snow px-2 text-sm mx-4 bg-gradient-to-r from-cyan-500 via-blue-500 to-cyan-500'>
         Become a sponsor
         </button>
         <img src={profile} className='max-h-14 my-0.5' />
