@@ -6,7 +6,7 @@ const Homepage = () => {
   return (
     <div className="">
       <main>
-        <section className="w-full p-4 flex flex-col justify-center shadow-lg bg-gradient-to-r from-gray-100 via-cyan-500 to-blue-500 h-80 rounded">
+        <section className="w-full p-4 flex flex-col justify-center shadow-lg bg-gradient-to-r from-gray-100 via-cyan-500 to-blue-500 h-80">
           <h1 className="mb-1 text-4xl sm:text-6xl font-black">Next Generation Techies</h1>
           <p className="mt-0 text-sm ">
             Join our Tech Talent community to sponsor the next generation of
@@ -25,7 +25,7 @@ const Homepage = () => {
               now.{" "}
             </p>
 
-            <div className="flex items-center h-18 mt-2">
+            <div className="flex items-center h-16 mt-2">
               <button
                 type="button"
                 className="flex items-center rounded-lg text-snow py-2 px-8 text-sm mx-4 bg-gradient-to-r from-cyan-500 to-blue-500"
@@ -36,22 +36,22 @@ const Homepage = () => {
           </div>
 
           <div className="flex flex-col justify-center items-center my-8 mx-2 z-10">
-            <img src={talent} className="rounded" />
+            <img src={talent} className="rounded h-96" />
           </div>
         </section>
 
         <section className="flex justify-center items-center py-4 xl:py-5 max-full ">
-          <div className="container py-4 xl:py-5 border-black sm:border-2 ">
+          <div className="container py-4 xl:py-5 border-cyan-500 border-4 rounded">
             <div className="flex flex-row mb-5 ">
               <div className="grid md:cols-span-8 xl:cols-span-6 text-center mx-auto">
-                <h2 className="mb-1 text-3xl">Talent Testimonies</h2>
+                <h2 className="mb-1 sm:text-3xl text-xl text-white bg-gradient-to-r from-cyan-500 to-blue-500">Talent Spotlight</h2>
                 <p className="w-50">
                   "I woke up lucky and I am thankful for the chances I got. I
                   understand that not many people are." - Abel
                 </p>
               </div>
             </div>
-            <div className="grid sm:grid-rows-2 grid-flow-col grid-rows-4 gap-2 sm:gap-4">
+            <div className="grid sm:grid-rows-2 grid-flow-col grid-rows-4 gap-2 sm:gap-4 ">
               <Testimonial />
               <Testimonial />
               <Testimonial />

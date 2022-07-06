@@ -4,7 +4,7 @@ import talent from "../../assets/trainee.jpg";
 const Testimonial = () => {
   return (
     <>
-      <div className="grid grid-col">
+      <div className="grid grid-col shadow-inner">
         <div className="flex flex-col sm:flex-row">
           <div className="w-80">
             <img
