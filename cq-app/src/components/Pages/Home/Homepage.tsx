@@ -53,7 +53,7 @@ const Homepage = () => {
         <section className="flex justify-center items-center py-4 xl:py-5 max-full mb-10 shadow-lg">
           <div className="container py-4 xl:py-5 border-cyan-500">
           
-            <div className="grid sm:grid-rows-2 grid-flow-col grid-rows-4 gap-2 sm:gap-16 ">
+            <div className="flex flex-col sm:flex-row sm:gap-12 ">
               <div className="max-w-md flex items-center justify-center">
                 <img src={mentorship} alt="" className="w-16" />
                 <Link to="/home">
