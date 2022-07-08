@@ -1,2 +1,2 @@
 # civil-quota-app
-A humanitarian centred application to contribute to sustainable growth and inspire young marginalised people
+A humanitarian-centered application to contribute to sustainable growth and inspire marginalized young people.
