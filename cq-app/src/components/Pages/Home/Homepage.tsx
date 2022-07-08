@@ -30,10 +30,14 @@ const Homepage = () => {
             </h3>
             <p>
               {" "}
-              You have everything in your might to save the world, why don't you
-              look into your hearts and lend a helping heart. The best time to
-              plant a tree, they say, was yesterday. The second best time is
-              now.{" "}
+              Sometimes we think we need to give a lot in order to make a
+              difference, but really all we need to do is touch one life.{" "}
+            </p>
+            <p className="mt-2">
+              {" "}
+              One act of kindness can make all the difference for one person,
+              and if everyone came together to help just one person, love
+              multiplies and leads to thousands and millions of uplifted people.{" "}
             </p>
 
             <div className="flex items-center h-16 mt-2">
@@ -50,60 +54,65 @@ const Homepage = () => {
           </div>
         </section>
 
-        <section className="flex justify-center items-center py-4 xl:py-5 max-full mb-10 shadow-lg">
+        <section className="flex sm:flex-rol flex-col justify-center items-center py-4 xl:py-5 max-full mb-10 shadow-lg">
           <div className="container py-4 xl:py-5 border-cyan-500">
-          
-            <div className="flex flex-col sm:flex-row sm:gap-12 ">
-              <div className="max-w-md flex items-center justify-center">
+            <div className="flex flex-col md:flex-row sm:gap-8 justify-center items-center sm:px-2">
+
+              <div className="max-w-md flex items-center justify-center sm:flex-wrap">
                 <img src={mentorship} alt="" className="w-16" />
                 <Link to="/home">
-                  <p className="text-center text-base text-blue-500 ml-2">Mentorship</p>{" "}
+                  <p className="text-center text-base text-blue-500 ml-2 ">
+                    Mentorship
+                  </p>{" "}
                 </Link>
               </div>
 
-              <div className="max-w-md flex items-center justify-center">
-                <img src={education} alt="" className="w-24"  />
+              <div className="max-w-md flex items-center justify-center sm:flex-wrap">
+                <img src={education} alt="" className="w-24" />
                 <Link to="/home">
-                  <p className="text-center text-base text-blue-500 ml-2">Education</p>{" "}
+                  <p className="text-center text-base text-blue-500 ml-2 ">
+                    Education
+                  </p>{" "}
                 </Link>
               </div>
 
-              <div className="max-w-md flex items-center justify-center">
-                <img src={scholarships} alt="" className="w-16"  />
+              <div className="max-w-md flex items-center justify-center sm:flex-wrap">
+                <img src={scholarships} alt="" className="w-16" />
                 <Link to="/home">
-                  <p className="text-center text-base text-blue-500 ml-2" >Scholarships</p>{" "}
+                  <p className="text-center text-base text-blue-500 ml-2">
+                    Scholarships
+                  </p>{" "}
                 </Link>
               </div>
 
-              <div className="max-w-md flex items-center justify-center">
-                <img src={tools} alt="" className="w-32"  />
+              <div className="max-w-md flex items-center justify-center sm:flex-wrap">
+                <img src={tools} alt="" className="w-28" />
                 <Link to="/home">
-                  <p className="text-center text-base text-blue-500 ml-2" >Tools</p>{" "}
+                  <p className="text-center text-base text-blue-500 ml-2 ">
+                    Tools
+                  </p>{" "}
                 </Link>
               </div>
 
-              <div className="max-w-md flex items-center justify-center">
-                <img src={resources} alt="" className="w-28"  />
+              <div className="max-w-md flex items-center justify-center sm:flex-wrap">
+                <img src={resources} alt="" className="w-28" />
                 <Link to="/home">
-                  <p className="text-center text-base text-blue-500 ml-2" >Resources</p>{" "}
+                  <p className="text-center text-base text-blue-500 ml-2 ">
+                    Resources
+                  </p>{" "}
                 </Link>
               </div>
 
-              <div className="max-w-md flex items-center justify-center">
-                <img src={engagement} alt="" className="w-28"  />
-                <Link to="/home">
-                  <p className="text-center text-base text-blue-500 ml-2">Fun</p>{" "}
-                </Link>
-              </div>
+             
             </div>
           </div>
         </section>
 
         <section className="flex justify-center items-center py-4 xl:py-5 max-full ">
-          <div className="container py-4 xl:py-5 border-cyan-500 border-4 rounded">
+          <div className="container py-4 lg:py-8 border-cyan-500 lg:border-4 rounded">
             <div className="flex flex-row mb-5 ">
               <div className="grid md:cols-span-8 xl:cols-span-6 text-center mx-auto">
-                <h2 className="mb-1 sm:text-3xl text-xl text-white bg-gradient-to-r from-cyan-500 to-blue-500">
+                <h2 className="mb-1 md:text-3xl text-xl text-white bg-gradient-to-r from-cyan-500 to-blue-500">
                   Talent Spotlight
                 </h2>
                 <p className="w-50">
@@ -113,7 +122,7 @@ const Homepage = () => {
               </div>
             </div>
 
-            <div className="grid sm:grid-rows-2 grid-flow-col grid-rows-4 gap-2 sm:gap-4 ">
+            <div className="grid md:grid-rows-2 xl:grid-flow-col grid-rows-4 gap-2 md:gap-4">
               <Testimonial />
               <Testimonial />
               <Testimonial />

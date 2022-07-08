@@ -13,7 +13,7 @@ const Testimonial = () => {
               alt="talent"
             />
           </div>
-          <div className="py-4 px-4">
+          <div className="py-4 px-4 sm:w-full">
             <h4 className="text-bold">Lorem libero donec</h4>
             <p className="flex flex-wrap text-sm mt-2">
               Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo
