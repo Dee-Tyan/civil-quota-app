@@ -127,6 +127,9 @@ const Homepage = () => {
               <Testimonial />
               <Testimonial />
               <Testimonial />
+              <Testimonial />
+              <Testimonial />
+
             </div>
           </div>
         </section>
