@@ -8,7 +8,7 @@ const SignUp = () => {
         className="flex justify-center py-4 xl:py-5"
       >
         <div className="container">
-          <div className="grid row-auto mb-2 ">
+          <div className="grid row-auto mb-2 bg-gradient-to-r from-blue-500 via-cyan-500 to-gray-100 text-white">
             <div className="text-center mx-auto md:col-span-8 xl:col-span-6 px-4">
               <h2 className="text-4xl mb-2">Sign Up</h2>
               <p className="flex flex-wrap">
@@ -20,7 +20,7 @@ const SignUp = () => {
             <div className="md:col-span-6 xl:col-span-4 ">
               <div className="box-border mb-2 border-grey border-2 rounded">
                 <div className="box-content flex flex-col items-center">
-                  <div className="bg-sapphire opacity-70 rounded-full bs-icon-xl bs-icon-circle bs-icon-primary bs-icon my-4">
+                  <div className="bg-gradient-to-r from-cyan-500 to-blue-500 opacity-70 rounded-full bs-icon-xl bs-icon-circle bs-icon-primary bs-icon my-4">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="4em"
@@ -62,7 +62,7 @@ const SignUp = () => {
                     </label>
                     <label className="mt-4 mb-3 flex justify-center text-center">
                       <button
-                        className="bg-sapphire opacity-70 text-white w-full px-2 py-2 rounded-md"
+                        className="bg-gradient-to-r from-cyan-500 to-blue-500 opacity-70 text-white w-full px-2 py-2 rounded-md"
                         type="submit"
                       >
                         Sign Up

@@ -19,7 +19,7 @@ const Login = () => {
             <div className="md:col-span-6 xl:col-span-4 ">
               <div className="box-border mb-2 border-grey border-2 rounded">
                 <div className="box-content flex flex-col items-center">
-                  <div className="bg-sapphire opacity-70 rounded-full bs-icon-xl bs-icon-circle bs-icon-primary bs-icon my-4">
+                  <div className="bg-gradient-to-r from-cyan-500 to-blue-500 opacity-70 rounded-full bs-icon-xl bs-icon-circle bs-icon-primary bs-icon my-4">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="4em"
@@ -52,7 +52,7 @@ const Login = () => {
                     </label>
                     <label className="mt-4 mb-3 flex justify-center text-center">
                       <button
-                        className="bg-sapphire opacity-70 text-white w-full px-2 py-2 rounded-md"
+                        className="bg-gradient-to-r from-cyan-500 to-blue-500 opacity-70 text-white w-full px-2 py-2 rounded-md"
                         type="submit"
                       >
                         Login
