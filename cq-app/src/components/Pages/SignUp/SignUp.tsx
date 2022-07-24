@@ -10,7 +10,7 @@ const SignUp = () => {
         <div className="container">
           <div className="grid row-auto mb-2 bg-gradient-to-r from-blue-500 via-cyan-500 to-gray-100 text-white">
             <div className="text-center mx-auto md:col-span-8 xl:col-span-6 px-4">
-              <h2 className="text-4xl mb-2">Sign Up</h2>
+              <h2 className="text-4xl mb-2">Join</h2>
               <p className="flex flex-wrap">
                 Sign up to join our pool of investors
               </p>
