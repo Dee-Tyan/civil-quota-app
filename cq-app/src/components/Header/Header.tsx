@@ -9,7 +9,7 @@ function Header() {
       <img src={logo} />
 
       <div className=" flex justify-end">
-        <Link to="/sponsor" className="flex justify-end">
+        <Link to="/login" className="flex justify-end">
           <button
             type="button"
             className="flex items-center rounded-lg text-snow px-2 text-sm mx-4 bg-gradient-to-r from-cyan-500 via-blue-500 to-cyan-500"
