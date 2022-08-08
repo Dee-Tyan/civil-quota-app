@@ -3,19 +3,29 @@ import { AuthContext } from "../../../context/AuthContext";
 import axios from "axios"
 
 const Login = () => {
-  const {user, dispatch} = useContext(AuthContext)
+  const { dispatch } = useContext(AuthContext)
 
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
 
-//  const login = async() => {
-//    const repsonse = await 
-//  }
+ const login = async() => {
+  const headers = {
+    "Content-Type": "application/json",
+
+  };
+   const response = await axios.post("http://localhost:5000/login/user-login", {email: email, password: password})
+   
+   dispatch({type: "LOGIN", payload: response.data.msg[0]})
+   console.log(response.data)
+ }
 
 const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
   e.preventDefault()
   console.log(email)
   console.log(password)
+  login()
+
+  
 }
   return (
     <div>

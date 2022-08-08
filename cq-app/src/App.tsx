@@ -1,4 +1,5 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
+import {useContext} from "react"
 import Homepage from "./components/Pages/Home/Homepage";
 import Layout from "./components/Layout/Layout";
 import Login from "./components/Pages/LoginPage/Login";
@@ -7,13 +8,18 @@ import ViewTalent from "./components/Pages/ViewTalent/ViewTalent";
 import Sponsor from "./components/Pages/Sponsor/Sponsor";
 import "./App.css";
 import Main from "./components/Pages/Main/Main";
+import {AuthContext} from "./context/AuthContext"
+
 const App = () => {
+
+  const {user} = useContext(AuthContext)
+  console.log("user: ", user)
   return (
     <BrowserRouter>
   
       <Routes>
         <Route path="/login" element={<Login />} />
-        <Route path="/home" element={<Main/>}> 
+        <Route path="/home" element={user ? <Main/> : <Navigate to="/login" />}> 
           <Route path="" element={<Homepage />} />
 
         </Route>

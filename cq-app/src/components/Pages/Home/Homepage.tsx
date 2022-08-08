@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import talent from "../../../assets/trainee.jpg";
 import Testimonial from "../../Testimonial/Testimonial";
@@ -8,8 +8,10 @@ import mentorship from "../../../assets/mentorship.png";
 import tools from "../../../assets/tools.png";
 import resources from "../../../assets/resources.png";
 import scholarships from "../../../assets/scholarships.png";
+import {AuthContext} from "../../../context/AuthContext"
 
 const Homepage = () => {
+
   return (
     <div className="">
       <main>
