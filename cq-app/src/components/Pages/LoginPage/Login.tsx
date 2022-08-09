@@ -1,5 +1,7 @@
 import React, {useContext, useState} from "react";
 import { AuthContext } from "../../../context/AuthContext";
+import {toast, ToastContainer} from "react-toastify"
+import 'react-toastify/dist/ReactToastify.css';
 import axios from "axios"
 
 const Login = () => {
@@ -9,14 +11,25 @@ const Login = () => {
   const [password, setPassword] = useState("")
 
  const login = async() => {
-  const headers = {
-    "Content-Type": "application/json",
+ 
+  try {
+    const response = await axios.post("http://localhost:5000/login/user-login", {email: email, password: password}) 
+    if(response.data.msg === "wrong username or password") {
+      toast.error(response.data.msg)
+    }
 
-  };
-   const response = await axios.post("http://localhost:5000/login/user-login", {email: email, password: password})
-   
-   dispatch({type: "LOGIN", payload: response.data.msg[0]})
-   console.log(response.data)
+    dispatch({type: "LOGIN", payload: response.data.msg[0]})
+    console.log("response: ",response)
+  } catch (error) {
+    if(error instanceof Error) {
+      toast.error(error.message)
+    } 
+  }
+  
+
+  
+
+  
  }
 
 const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
@@ -95,7 +108,9 @@ const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
             </div>
           </div>
         </div>
+        <ToastContainer />
       </section>
+     
     </div>
   );
 };
