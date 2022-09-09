@@ -16,9 +16,7 @@ const Testimonial = () => {
           <div className="py-4 px-4 sm:w-full">
             <h4 className="text-bold">Lorem libero donec</h4>
             <p className="flex flex-wrap text-sm mt-2">
-              Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo
-              odio, dapibus ac facilisis in, egestas eget quam. Donec id elit
-              non mi porta gravida at eget metus.
+             A lot has happened in my life since I was selcted to join the program. I am grateful for all the help of our sponsors and I wish every other child out there can get the chance I did to make their life better as well.
             </p>
           </div>
         </div>
