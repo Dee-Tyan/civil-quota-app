@@ -3,6 +3,7 @@ import { AuthContext } from "../../../context/AuthContext";
 import {toast, ToastContainer} from "react-toastify"
 import 'react-toastify/dist/ReactToastify.css';
 import axios from "axios"
+import { Link } from "react-router-dom";
 
 const Login = () => {
   const { dispatch } = useContext(AuthContext)
@@ -14,7 +15,7 @@ const Login = () => {
  
   try {
     const response = await axios.post("http://localhost:5000/login/user-login", {email: email, password: password}) 
-    if(response.data.msg === "wrong username or password") {
+    if(response.data.msg === "error! wrong username or password") {
       toast.error(response.data.msg)
     }
 
@@ -101,7 +102,7 @@ const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
                         Login
                       </button>
                     </label>
-                    <p className="text-center text-sm"> Forgot your password?</p>
+                    <Link to="/users" className="text-center text-sm"> Forgot your password?</Link>
                   </form>
                 </div>
               </div>
