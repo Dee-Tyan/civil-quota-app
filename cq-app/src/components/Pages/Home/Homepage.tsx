@@ -9,13 +9,16 @@ import tools from "../../../assets/tools.png";
 import resources from "../../../assets/resources.png";
 import scholarships from "../../../assets/scholarships.png";
 import {AuthContext} from "../../../context/AuthContext"
+import Header from "../../Header/Header";
+import Footer from "../../Footer/Footer";
 
 const Homepage = () => {
 
   return (
     <div className="">
       <main>
-        <section className="w-full p-4 flex flex-col justify-center shadow-lg bg-gradient-to-r from-gray-100 via-cyan-500 to-blue-500 h-80">
+        <Header />
+        <section className="w-full p-4 flex flex-col justify-center shadow-lg bg-gradient-to-r from-gray-100 via-cyan-500 to-blue-500 h-80 pl-16">
           <h1 className="mb-1 text-4xl sm:text-6xl font-black">
             Next Generation Techies
           </h1>
@@ -135,6 +138,7 @@ const Homepage = () => {
             </div>
           </div>
         </section>
+      <Footer/>
       </main>
     </div>
   );
